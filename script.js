@@ -1,14 +1,18 @@
+document.querySelector('.input-item').focus();
 const addTask = () => {
     const userInput = document.querySelector('.input-item').value.trim();
     if (userInput == '') {
         alert("Please add a valid task. task cannot be empty!");
+        document.querySelector('.input-item').focus();
         return;
     }
     const createdLi = document.createElement('li');
     createdLi.innerText = userInput;
     const deleteButton = document.createElement('button');
+    deleteButton.classList.add('delete-btn')
     deleteButton.innerText = 'Delete';
     const completeButton = document.createElement('Button');
+    completeButton.classList.add('completed-btn');
     completeButton.innerText = 'Completed';
     createdLi.appendChild(deleteButton);
     createdLi.appendChild(completeButton);
