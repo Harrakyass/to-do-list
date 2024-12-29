@@ -4,7 +4,7 @@ body {
   text-align: center;
   color: #fff;
   margin-top: 50px;
-  background-image: url('background.png');
+  background-image: url('background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,17 +12,17 @@ body {
   background: rgba(30, 30, 30, 0.95);
   width: 400px;
   margin: 0 auto;
-  border: 2px solid #ff4500;
+  border: 2px solid #575141;
   padding: 20px;
   color: #fff;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
+  box-shadow: 0 0 20px rgba(65, 68, 48, 1);
 }
 #header {
   font-size: 24px;
   margin: 5px;
   text-align: center;
-  color: #ff4500;
+  color: #6A5834;
   font-family: 'Cinzel', serif;
   letter-spacing: 2px;
 }
@@ -33,7 +33,7 @@ h1 {
 #input-box {
   width: 200px;
   padding: 10px;
-  border: 1px solid #ff4500;
+  border: 1px solid #6A5834;
   border-radius: 5px;
   margin-right: 5px;
   font-size: 18px;
@@ -46,12 +46,13 @@ h1 {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #ff4500;
-  color: white;
+  background-color: #6A5834;
+  color: #222A1F;
   transition: background-color 0.4s;
 }
 #input-button:hover {
-  background-color: #ff6347;
+  background-color: #222A1F;
+  color: #6A5834;
 }
 ul {
   list-style: none;
@@ -60,22 +61,21 @@ ul {
   text-align: left;
 }
 li {
-  border: 1px solid #ff4500;
+  border: 1px solid #6A5834;
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 10px;
   margin-top: 10px;
-  background-color: rgba(50, 50, 50, 0.8);
+  background: rgba(30, 30, 30, 0.8);
   color: #fff;
 }
 .completed {
   text-decoration: line-through;
-  color: #999;
-  border-color: #999;
 }
 .edit-btn{
   float: right;
-  color: #ff6347;
+  color: #424436;
+  background-color: #6A5834;
   cursor: pointer;
   margin: 3px 5px;
   border: none;
@@ -84,14 +84,15 @@ li {
   transition: color 0.3s;
 }
 .edit-btn:hover  {
-  color: #fff;
+  background-color: #424436;
+  color: #6A5834;
 }
 
 .delete-btn, .completed-btn {
-  background-color: #ff4d4d;  /* Light red */
+  background-color: #6A5834;  /* Light red */
   border: none;
   padding: 3px 5px;
-  color: white;
+  color: #424436;
   font-size: 12px;
   cursor: pointer;
   border-radius: 5px;
@@ -99,6 +100,7 @@ li {
   float: right;
 }
 
-.delete-btn:hover {
-  background-color: #ff1a1a;  /* Darker red on hover */
+.delete-btn:hover, .completed-btn:hover {
+  background-color: #424436;
+  color: #6A5834;
 }
